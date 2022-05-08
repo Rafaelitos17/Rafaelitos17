@@ -1,11 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
+import {Message} from "./Message";
 
-function AlternativeMessage() {
+export function AlternativeMessage() {
     return (
-        <div>
-
-        </div>
+        <>
+        </>
     )
 }
 
-export default AlternativeMessage

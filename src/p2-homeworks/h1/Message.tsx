@@ -1,14 +1,14 @@
 import React from 'react'
 import s from './Message.module.css'
 
-type MessagePropsType = {
-    avatar: any
+export type MessagePropsType = {
+    avatar: string
     name: string
     message: string
     time: string
 }
 
-function Message(props: MessagePropsType) {
+export function Message(props: MessagePropsType) {
     return (
         <div className={s.wrapper}>
             <div className={s.body}>
@@ -31,4 +31,3 @@ function Message(props: MessagePropsType) {
     )
 }
 
-export default Message
