@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import {v1} from 'uuid'
 import GreetingContainer from './GreetingContainer'
 
 // types
@@ -9,10 +10,12 @@ export type UserType = {
 
 // уровень работы с глобальными данными
 function HW3() {
-    const [users, setUsers] = useState<Array<UserType>>([]) // need to fix any
+    const [users, setUsers] = useState<UserType[]>([]) // need to fix any
 
     const addUserCallback = (name: string) => { // need to fix any
-        setUsers([]) // need to fix
+        let user = {_id: v1(), name: name}
+        let newUsers = [...users, user]
+        setUsers(newUsers) // need to fix
     }
 
     return (
@@ -21,7 +24,9 @@ function HW3() {
             homeworks 3
 
             {/*should work (должно работать)*/}
-            <GreetingContainer users={users} addUserCallback={addUserCallback}/>
+            <GreetingContainer users={users}
+                               addUserCallback={addUserCallback}
+            />
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
