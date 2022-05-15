@@ -13,7 +13,7 @@ const HW1 = () => {
     return (
         <div>
             <hr/>
-            homeworks 1
+            --HOMEWORK1--
 
             {/*should work (должно работать)*/}
             <Message

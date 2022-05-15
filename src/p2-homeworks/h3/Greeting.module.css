@@ -5,3 +5,9 @@
 .error {
     border: 1px solid red;
 }
+
+.spanError {
+    display: block;
+    color: crimson;
+    font-weight: bold;
+}
