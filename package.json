@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Rafaelitos17.github.io/ignatHomework",
   "name": "homeworks",
   "version": "0.1.0",
   "private": true,
@@ -20,7 +21,6 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "homepage": "https://Rafaelitos17.github.io/ignatHomework",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

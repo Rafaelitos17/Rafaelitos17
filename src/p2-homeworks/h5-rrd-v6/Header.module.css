@@ -1,0 +1,32 @@
+.block {
+    width: 21px;
+    height: 21px;
+    margin: 10px;
+    background: #019e37;
+}
+
+.link {
+    text-decoration: none;
+    color: blue;
+    margin: 10px;
+}
+
+.link:hover {
+    color: purple;
+}
+
+.active {
+    color: cornflowerblue;
+}
+
+.header {
+    display: flex;
+    width: 280px;
+    transition-duration: 500ms;
+    transform: translate(-220px);
+}
+
+.header:hover {
+    transition-duration: 500ms;
+    transform: translate(0);
+}
