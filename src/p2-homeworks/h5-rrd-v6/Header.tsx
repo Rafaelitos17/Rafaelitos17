@@ -3,12 +3,7 @@ import {NavLink} from "react-router-dom";
 import {PATH} from "./Pages";
 import s from "./Header.module.css"
 
-type ActionType = {
-    [key: string]: boolean
-}
-
 function Header() {
-    const setAction = ({isActive}: ActionType) => isActive ? s.active : s.item
     return (
         <div>
             <NavLink to={PATH.PRE_JUNIOR}
